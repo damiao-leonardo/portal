@@ -1,23 +1,23 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+No diretório do projeto, você pode executar:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o aplicativo no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador..
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A página será recarregada se você fizer edições.
+Você também verá quaisquer erros de lint no console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de teste no modo de observação interativo.
+Consulte a seção sobre execução de testes para obter mais informações. [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
 
 ## Descrição sobre o trabalho realizado
@@ -64,5 +64,3 @@ Foram utilizadas ferramentas como:
 
 - Foi criado um unico teste unitario, devido ao tempo, porem a intenção era fazer pelo menos um para cada component e pagina da aplicação.
 
-
-# portal
