@@ -27,7 +27,7 @@ const NewProduct: React.FC = () => {
 
   const { createProduct } = useProducts();
 
-  const handleSubmit = useCallback(async (data: ProductFormData) => {
+  const handleSubmit = async (data: ProductFormData) => {
     try{
         formRef.current?.setErrors({});
     
@@ -50,7 +50,7 @@ const NewProduct: React.FC = () => {
             formRef.current?.setErrors(errors);
         }   
     }
-},[]);
+};
 
 return (
         <>

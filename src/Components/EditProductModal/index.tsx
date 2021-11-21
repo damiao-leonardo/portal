@@ -30,7 +30,7 @@ export function EditProductModal({isOpen,onRequestClose,product} : EditProductMo
 
     const formRef = useRef<FormHandles>(null);
 
-    const handleEditProduct = useCallback(async (data: Product) => {
+    const handleEditProduct = async (data: Product) => {
 
         // Formulario com validação para editar um produto especifico
         try{
@@ -55,7 +55,7 @@ export function EditProductModal({isOpen,onRequestClose,product} : EditProductMo
                 formRef.current?.setErrors(errors);
             }   
         }
-    },[]);
+    };
 
     return(
     <Modal
