@@ -19,28 +19,50 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Descrição sobre o trabalho realizado
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Techs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Tecnologias Utilizadas
 
-### `yarn eject`
+- React.Js
+- TypeScript
+- styled-components
+- react-router-dom
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 💻 Sobre a aplicação
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Aplicação responsavel por listar todos os produtos e realizar o cadastro de novos.
+Todos os produtos estão sendo salvos no `localStorage` com a opção de cadastrar novos, Editar ou remover.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 💻 Ferramentas utilizadas
 
-## Learn More
+Foram utilizadas ferramentas como:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- UUID: Gerar um id unico para cada produto;
+- Polished: Trablhar com cores dentro do Styled-components
+- Yup: Validação dos formularios para criar e editar os produtos
+- Unform: Utilizada na manipulação dos formularios do aplicação
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Decisões
+
+- Foram criados alguns componentes para melhor trabalhar dentro da aplicação, como tambem pensando em uma escalabilidade futura da aplicação:
+
+  - Input : Personalização toda do ZERO, como tratativas aos erros, valores default, possiveis icones para serem adicionados,bordas personalizadas para quando o input tiver selecionado.
+
+  -Tooltip: Personalização das mensagens de erros ao tentar cadastrar ou editar um produto.
+
+
+- As cores e alguns elementos visuais da aplicação foram baseadas na logo enviada pelo email.
+
+- Foi criado um Hook `useProducts` utilizando o Context API, considerando que seja necessario para repassar os produtos cadastradas entre as paginas da aplicação.Tendo como funcionalidade dentro do Hook as funções de Criar, Editar e Remover os produtos, considerando fazer mais sentindo tais funções dentro do context.
+
+- Foi criado uma pagina para cadastro do produto de forma isolado e criado uma modal para editar o produto, tendo em mente uma maior acessibilidade e usabilidade para o cliente.
+
+- Foi criado um unico teste unitario, devido ao tempo, porem a intenção era fazer pelo menos um para cada component e pagina da aplicação.
+
+
+# portal
